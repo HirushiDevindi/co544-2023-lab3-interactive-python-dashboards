@@ -1,0 +1,3 @@
+URL of deployed dashboard on Render Cloud Platform :
+
+https://wine-quality-prediction-dashboard-jali.onrender.com
