@@ -43,7 +43,7 @@ server = app.server
 app.layout = html.Div(
     children=[
     
-    html.H1('CO544-2023 Lab 3: Wine Quality Prediction'),
+    html.H1('CO544-2023 Lab 3: Wine Quality Prediction', style={'color': 'blue', 'textAlign': 'center'}),
     
     html.Div([
         html.H3('Exploratory Data Analysis'),
@@ -67,7 +67,7 @@ app.layout = html.Div(
     dcc.Graph(id='correlation_plot'),
     
     # Wine quality prediction based on input feature values
-    html.H3("Wine Quality Prediction"),
+    html.H3("Wine Quality Prediction - Insert Values here"),
     html.Div([
         html.Label("Fixed Acidity"),
         dcc.Input(id='fixed_acidity', type='number', required=True),    
@@ -105,7 +105,7 @@ app.layout = html.Div(
     ]),
 
     html.Div([
-        html.H4("Predicted Quality"),
+        html.H4("Predicted Quality of Wine", style={'color': 'red'}),
         html.Div(id='prediction-output')
     ])
 ])
